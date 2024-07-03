@@ -11,3 +11,5 @@ const handleDate = () => {
 }
 
 document.addEventListener('DOMContentLoaded', handleDate);
+
+setInterval(handleDate, 1000);
