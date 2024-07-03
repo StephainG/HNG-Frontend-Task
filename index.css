@@ -2,6 +2,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
+    color: #4f4f4f;
 }
 
 .project_body{
@@ -59,6 +60,19 @@ body {
     list-style-type: none;
     line-height: 24px;
     padding-left: 0;
+    display: flex;
+}
+
+.project_description_goals ul li{
+    margin: 20px;
+    border: 4px solid #ffffff;
+    padding: 16px;
+    text-align: justify;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.project_description_goals ul li:first-child{
+    margin-left: 0;
 }
 
 .project_description_links{
@@ -180,9 +194,24 @@ body {
         font-size: 16px;
     }
 
-    .project_description_goals ul li{
-        font-size: 12px;
+    .project_description_goals ul {
+        display: grid;
+        grid-template-columns: 1fr;
     }
+    
+    .project_description_goals ul li {
+        border: 4px solid #ffffff;
+        margin: 0;
+        padding: 16px;
+        text-align: justify;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+
+    /* .project_description_goals ul li{
+        font-size: 12px;
+        display: block;
+    } */
 
     .project_description_links ul li:first-child{
         margin-left: 10px;
